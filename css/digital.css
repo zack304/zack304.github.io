@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: blue;
+}
+
+section {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: white;
+}
+
+.card {
+  padding: 15px;
+  border: 10px solid blue;
+}
+
+.timeline {
+  grid-row: 2 span;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+/* Goal */
+.content-goal {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  justify-self: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+
+.content-goal i {
+  padding-top: 29px;
+  padding-bottom: 28px;
+  padding-left: 44px;
+  padding-right: 45px;
+}
+
+/* Team */
+.merber {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.name {
+  padding: 5px;
+}
+
+.merber i {
+  justify-self: center;
+  align-self: center;
+}
+
+/* Scopes */
+.sco {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 0;
+}
+
+.sco h5 {
+  margin-bottom: 15px;
+}
+
+.number {
+  width: 30px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: blueviolet;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Timeline */
+.day {
+  padding: 10px;
+  border-bottom: 1px dashed blue;
+}
+
+.number {
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  section,
+  .sco,
+  .merber,
+  .content-goal {
+    grid-template-columns: 1fr;
+  }
+
+  .content-goal i {
+    border-bottom: none;
+  }
+
+  .sco {
+    gap: 10px;
+  }
+
+  .number {
+    justify-self: flex-start;
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  section,
+  .sco,
+  .merber {
+    grid-template-columns: 1fr;
+  }
+
+  .sco {
+    gap: 10px;
+  }
+
+  .number {
+    justify-self: flex-start;
+    align-self: center;
+  }
+
+  .content-goal {
+    grid-template-columns: 1fr;
+  }
+
+  .content-goal i {
+    border-bottom: none;
+  }
+}

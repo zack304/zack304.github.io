@@ -1,0 +1,62 @@
+@media (max-width: 500px) {
+  /* Định dạng nav */
+  .nav-list {
+    flex-direction: column;
+  }
+
+  /* Địng dạng thông tin cá nhân */
+
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  #target {
+    justify-self: normal;
+    padding-left: 50px;
+  }
+
+  /* Định dạng kinh nghiệm học vấn sở thích */
+  #job-info .container {
+    display: inline-block;
+    width: 400px;
+    grid-template-columns: 320px;
+  }
+
+  #project .container {
+    display: inline-block;
+    width: 450px;
+  }
+
+  /* Địng dạng phần chứng chỉ */
+  #cer-container {
+    width: 450px;
+  }
+
+  .cert {
+    width: 300px;
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  .cert-prf::before {
+    display: none;
+  }
+
+  .cert-prf .point-cert {
+    grid-column: 1;
+  }
+
+  .dbi-prf {
+    grid-template-columns: 1fr;
+  }
+
+  /* Định dạng phần dự án */
+
+  #project .container {
+    padding-left: 20px;
+  }
+
+  /* Địng dạng phần footer */
+  .containerr-f {
+    padding: 20px 0;
+  }
+}
